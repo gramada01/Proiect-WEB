@@ -1,4 +1,309 @@
-body {
+:root{
+    --primary: #95ff00 !important;
+    --secondary: #000000 !important;
+    --accent: #daff8f !important;
+    --background: #ffffff !important;
+    --text: black !important;
+    --background_pagina: #fff0db !important;
+
+    --marigin_large: 3%;
+    --marigin_medium: 2%;
+    --marigin_small: 1%;
+
+    --base-size: 75px; 
+    --logo-width: calc(var(--base-size) * 2.12);
+    --logo-height: calc(var(--base-size) * 1); 
+    --logo-border-size: calc(var(--base-size) * 0.2);
+    --logo-border-color: var(--accent);
+    --logo-radius :calc(var(--base-size) * 0.5); 
+}
+
+html{
+    background: linear-gradient(var(--primary), var(--secondary), var(--accent));
+    background-attachment: fixed;
+    font-family: "Tektur", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text);
+    text-decoration: none;
+    justify-content: start;
+}
+
+body{
+    margin-left: var(--marigin_large);
+    margin-right: var(--marigin_large);
+    padding: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-left: var(--margin-medium);
+        margin-right: var(--margin-medium);
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        margin-left: var(--margin-small);
+        margin-right: var(--margin-small);
+    }
+}
+
+header {
+    background-color: var(--secondary); 
+    color: var(--background); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(255, 0, 0);
+    margin-bottom: 20px; 
+}
+
+.bara_sus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+
+#logo {
+    position: relative;
+    width: var(--logo-width);
+    height: var(--logo-height);
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+
+#logo:before,
+#logo:after {
+    content: "";
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(var(--base-size) * 0.6); 
+    height: calc(var(--base-size) * 0.6);
+    border: var(--logo-border-size) solid var(--logo-border-color);
+    border-radius: var(--logo-radius) var(--logo-radius) 0 var(--logo-radius);
+    transform: rotate(-45deg);
+}
+
+#logo:after {
+    left: auto;
+    right: 0;
+    border-radius: var(--logo-radius) var(--logo-radius) var(--logo-radius) 0;
+    transform: rotate(45deg);
+}
+
+
+#titlu h1 {
+    font-family: "Tektur", sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent); 
+    margin-right: 500px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.829);
+}
+
+
+.navigare ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; 
+}
+
+.navigare li {
+    display: inline;
+}
+
+.navigare a {
+    text-decoration: none;
+    color: var(--background);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigare a:hover {
+    background-color: var(--accent);
+    color: var(--secondary);
+}
+
+footer{
+    border: 1px solid var(--primary);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#link-top{
+    position:fixed;
+    bottom:1em;
+    opacity:0.5;
+    right:1em;
+    width:3rem;
+    box-sizing: border-box;
+    height:3rem;
+    line-height:3rem;
+    text-align:center;
+    border: 0.3em solid grey;
+    border-style: dashed;
+    border-radius:50%;
+    background: linear-gradient(var(--primary), var(--secondary), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#link-top:hover{
+    opacity:1;
+    transition: 0.5s;
+    rotate: 90deg;
+}
+
+#vf_info{
+    position:fixed;
+    bottom: 4.2em;
+    right: 0.3em;
+    opacity: 0;
+    background: #ffffff;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+}
+
+#link-top:hover + #vf_info{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#triunghi{
+    font-size: 30px;
+    transition: 0.5s;
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 8%;
+    padding-bottom: 7%;
+    border-radius: 50%;
+}
+
+#triunghi:hover{
+    rotate: -90deg;
+    transition: 0.5s;
+}
+
+.container_pag_princ{
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow: -10px 10px 8px var(--text);
+    padding: 20px;
+}
+
+#tabel_oferte {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.125em;
+    text-align: left;
+    border: 5px solid var(--accent);
+}
+
+#tabel_oferte th, #tabel_oferte td {
+    padding: 12px 15px;
+    border: 1px solid var(--text);
+}
+
+#tabel_oferte td:nth-child(even) {
+    color: var(--secondary);
+}
+
+#tabel_oferte thead {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+#tabel_oferte tbody tr {
+    background-color: var(--background);
+}
+
+#tabel_oferte tbody tr:hover {
+    background-color: var(--secondary);
+    border: 5px solid var(--text);
+    transition: 0.75s;
+}
+
+#tabel_oferte tbody tr:hover td {
+    color: var(--accent) !important;
+}
+
+#tabel_oferte caption {
+    caption-side: bottom;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-iframe{
+    display: flex;
+    padding-top: 20px;
+}
+
+img, video, iframe {
+    width: 100%; 
+    max-width: 800px; 
+    min-width: 300px; 
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 800px) {
+    img, video, iframe {
+        max-width: 100%;
+        min-width: 200px;
+        height: 200px;
+    }
+}
+
+#video_nike{
+    border: 10px inset var(--primary);
+
+}
+
+.buton_nike{
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--background);
+    margin-top: -10px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    border: 4px solid var(--primary);
+    border-top-right-radius: 30% 70%;
+    white-space: normal;
+    box-shadow: inset 0 0 8px var(--secondary);
+    transition: 0.5s;
+}
+
+.taburi-iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.buton_nike:hover{
+    color: var(--background);
+    background-color: var(--primary);
+    transition: 0.5s;
+    border-left: 4px solid var(--secondary);;
+}
+
+
+
+/* body {
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -43,4 +348,4 @@ section {
     border: 1px solid #dee2e6;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */

@@ -78,8 +78,6 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
 #link-top{
     position:fixed;
     bottom:1em;
@@ -242,18 +240,15 @@ img, video, iframe {
     margin: 0 auto;
 }
 
-
 @media (max-width: 800px) {
     img, video, iframe {
         max-width: 80vw;
         min-width: 30vw;
     }
-    
 }
 
 #video_nike{
     border: 10px inset var(--primary);
-
 }
 
 .taburi-iframe{
@@ -352,4 +347,3 @@ main a:active {
     border-radius: 4px;
     padding: 2px 4px;
 }
-

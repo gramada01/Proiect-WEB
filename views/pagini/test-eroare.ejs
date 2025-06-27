@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Test Eroare</title>
+        <%- include('../fragmente/head') %>
+    </head>
+    <body>
+        <%- include('../fragmente/header') %>
+        <main>
+            <h1>Test pentru eroarea 500</h1>
+            <p>Această pagină va genera o eroare pentru a testa sistemul de erori.</p>
+            
+            <!-- Aceasta va genera o eroare pentru că variabila nu există -->
+            <p>Variabila inexistentă: <%= variabilaInexistenta %></p>
+            
+            <!-- Sau aceasta va genera o eroare de sintaxă -->
+            <% if (true) { %>
+                <p>Test</p>
+            <!-- Lipsește închiderea if-ului pentru a genera eroare -->
+        </main>
+        <%- include('../fragmente/footer') %>
+    </body>
+</html> 

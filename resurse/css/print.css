@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Stiluri pentru Printare - se aplica doar la print
+   ========================================================================== */
+
+   @media print {
+
+    /* Prima data, reglez marginile paginii, cum cerea cerinta.
+       @page este o regula speciala pentru printare care controleaza pagina in sine. */
+    @page :left {
+        /* pentru paginile din stanga (2, 4, 6...), las loc pentru legat/capsat in stanga */
+        margin-left: 2.5cm;
+        margin-right: 0.5cm;
+    }
+
+    @page :right {
+        /* pentru paginile din dreapta (1, 3, 5...), las loc pentru legat/capsat in dreapta */
+        margin-right: 2.5cm;
+        margin-left: 0.5cm;
+    }
+
+    /* Resetez niste chestii generale pentru a arata bine pe hartie */
+    * {
+        /* scot toate umbrele si tranzitiile, ca nu au sens pe hartie si pot consuma cerneala */
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: none !important;
+    }
+
+    body {
+        /* setez culoarea de baza a textului sa fie negru, pentru lizibilitate maxima */
+        color: black;
+        /* setez un font standard pentru print, care e mai usor de citit pe hartie */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* Aici ascund toate elementele care nu trebuie sa apara la print */
+    header .navigare_bara_sus, /* ascund meniul */
+    img,              /* ascund imaginile */
+    video,            /* ascund video-urile */
+    iframe,           /* ascund iframe-urile (ex: harti, video-uri youtube) */
+    .container-iframe,/* ascund si containerul de iframe cu tot cu taburi */
+    .taburi-iframe,   /* ascunde taburile aferente iframe-urilor */
+    figcaption,       /* ascunde descrierile imaginilor */
+    #link-top         /* ascund sageata de "inapoi sus" */ {
+        display: none !important; /* !important e necesar ca sa fiu sigur ca suprascrie orice alt stil */
+    }
+
+    /* Stilizarea pentru titlul principal (H1) pe prima pagina */
+    h1 {
+        /* il fac de 2.5 ori mai mare decat fontul de baza (care era 18px) */
+        font-size: 2.5rem;
+        /* il subliniez, conform cerintei */
+        text-decoration: underline;
+        color: black !important;
+        text-align: center;
+        margin-top: 40vh;
+        margin-bottom: 40vh;
+        page-break-after: always;
+    }
+
+    /* Dezactivez layout-ul de grid si il fac sa curga normal, ca un document */
+    .grid, [class^="zona"] {
+        /* scot padding-ul lateral ca sa folosesc spatiul paginii eficient */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        /* fortez toate sectiunile din main sa se afiseze una sub alta (ca niste blocuri) */
+        display: block !important;
+    }
+    main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        display: block !important;
+    }
+    main section {
+        /* ma asigur ca fiecare sectiune se afiseaza ca un bloc intreg */
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Fac link-urile sa arate ca text normal */
+    a {
+        color: inherit !important; /* 'inherit' inseamna ca preia culoarea de la parinte (body, adica negru) */
+        text-decoration: none !important; /* scot sublinierea */
+    }
+
+    /* Adaug un page-break inainte de footer, pentru a-l impinge pe o pagina noua daca e cazul */
+    footer {
+        page-break-before: always;
+        background: none !important;
+        border: none !important;
+    }
+
+    /* Aici e smecheria cu banner-ul: il mut din footer in capul paginii */
+    #banner-print {
+        /* il scot din fluxul normal al paginii cu 'position: absolute' */
+        position: absolute;
+        top: 1cm; /* il pozitionez la 1cm de sus */
+        left: 10%; /* il mut 10% din stanga... */
+        width: 80%; /* ...si ii dau latime 80%, ceea ce il centreaza efectiv */
+        border: 2px dotted black; /* adaug bordura punctata ceruta */
+        padding: 1em;
+        text-align: center;
+        background-color: white; /* ma asigur ca are fundal alb sa nu se vada textul de sub el */
+        display: block !important;
+    }
+
+    /* Aici creez watermark-ul pe fiecare pagina.
+       Folosesc un pseudo-element pe body, ca sa nu adaug HTML in plus. */
+    body::after {
+        content: "Matei Chiscan";
+        position: fixed;
+        bottom: 2cm;
+        right: 2cm;
+        width: 100px;
+        height: 2cm;
+        border: 4px double black;
+        opacity: 0.65;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        pointer-events: none;
+    }
+}

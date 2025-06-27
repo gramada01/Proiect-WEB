@@ -1,0 +1,26 @@
+{
+  "name": "infinity",
+  "version": "1.0.0",
+  "description": "Magazin de haine - proiect școlar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "magazin",
+    "magazin de haine",
+    "Nike",
+    "imbracaminte",
+    "haina",
+    "haine",
+    "moda",
+    "reduceri"
+  ],
+  "author": "Matei Chiscan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "sharp": "^0.34.2"
+  }
+}

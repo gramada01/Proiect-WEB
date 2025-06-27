@@ -1,0 +1,306 @@
+// Variabile SCSS echivalente cu cele din bara_sus.css
+$primary: #95ff00 !default;
+$secondary: #000000 !default;
+$accent: #daff8f !default;
+$background: #ffffff !default;
+$text: black !default;
+$background_pagina: #fff0db !default;
+$margin_large: 3vw !default;
+$margin_medium: 2vw !default;
+$margin_small: 1vw !default;
+$base-size: 5vw !default;
+$logo-width: $base-size * 2.12;
+$logo-height: $base-size * 1;
+$logo-border-size: $base-size * 0.2;
+$logo-border-color: $accent;
+$logo-radius: $base-size * 0.5;
+
+:root{
+    --primary: #95ff00 !important;
+    --secondary: #000000 !important;
+    --accent: #daff8f !important;
+    --background: #ffffff !important;
+    --text: black !important;
+    --background_pagina: #fff0db !important;
+
+    --margin_large: 3vw;
+    --margin_medium: 2vw;
+    --margin_small: 1vw;
+
+    --base-size: 5vw; 
+    --logo-width: calc(var(--base-size) * 2.12);
+    --logo-height: calc(var(--base-size) * 1); 
+    --logo-border-size: calc(var(--base-size) * 0.2);
+    --logo-border-color: var(--accent);
+    --logo-radius: calc(var(--base-size) * 0.5); 
+}
+
+.bara_sus {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 2vw;
+
+    #titlu {
+        h1 {
+            font-family: "Tektur", sans-serif;
+            font-size: 30px;
+            color: $accent;
+            margin-right: 30vw;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.829);
+        }
+    }
+
+    .navigare_bara_sus {
+        > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+
+            > li {
+                position: relative;
+
+                > a {
+                    text-decoration: none;
+                    color: $background;
+                    font-size: 25px;
+                    font-weight: bold;
+                    padding: 0.8vw 1.2vw;
+                    transition: background-color 0.3s, color 0.3s;
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0.2em;
+                        width: 0;
+                        height: 5px;
+                        background: linear-gradient(to left, #fff 70%, rgba(255,255,255,0.05) 100%);
+                        transition: width 0.4s cubic-bezier(0.77,0,0.175,1);
+                        pointer-events: none;
+                    }
+
+                    &:hover::after,
+                    &:focus::after {
+                        width: 100%;
+                        right: 0;
+                        left: auto;
+                    }
+                }
+
+                &:hover > .submenu,
+                &:focus-within > .submenu {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: scaleY(1);
+                }
+
+                .submenu {
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    min-width: 100%;
+                    width: auto;
+                    transform: scaleY(0);
+                    transform-origin: center;
+                    background-color: $secondary;
+                    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+                    border-radius: 0;
+                    z-index: 1000;
+                    padding: 0 0;
+                    margin-top: 0;
+                    transition: opacity 0.5s, transform 0.5s;
+
+                    li {
+                        display: block;
+                        width: 100%;
+
+                        a {
+                            font-size: 20px;
+                            padding: 0.6vw 1vw;
+                            text-align: left;
+                            white-space: nowrap;
+
+                            &:hover,
+                            &:focus {
+                                background-color: $accent;
+                                color: $secondary;
+                                transition: 1s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #burger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 2000;
+        span {
+            display: block;
+            width: 28px;
+            height: 4px;
+            margin: 4px 0;
+            background: $accent;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+    }
+}
+
+#logo {
+    &::before,
+    &::after {
+        content: "";
+        box-sizing: content-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $base-size * 0.6;
+        height: $base-size * 0.6;
+        border: $logo-border-size solid $logo-border-color;
+        border-radius: $logo-radius $logo-radius 0 $logo-radius;
+        transform: rotate(-45deg);
+    }
+    &::after {
+        left: auto;
+        right: 0;
+        border-radius: $logo-radius $logo-radius $logo-radius 0;
+        transform: rotate(45deg);
+    }
+}
+
+@media (max-width: 800px) {
+    .bara_sus {
+        justify-content: center;
+        #titlu h1 {
+            font-size: 20px;
+            margin-right: 0;
+            text-align: center;
+        }
+        .navigare_bara_sus a {
+            font-size: 14px;
+        }
+        .navigare_bara_sus .submenu {
+            min-width: 150px;
+            a {
+                font-size: 12px;
+            }
+        }
+        .text-acasa {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .bara_sus {
+        justify-content: center;
+        #titlu h1 {
+            font-size: 18px;
+        }
+        .navigare_bara_sus a {
+            font-size: 12px;
+        }
+        .navigare_bara_sus .submenu {
+            min-width: 120px;
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+    #burger {
+        display: flex;
+    }
+    .navigare_bara_sus {
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: $secondary;
+        z-index: 1500;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        max-width: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(90deg);
+        transform-origin: top right;
+        transition: transform 0.5s, opacity 0.5s;
+        display: flex;
+        > ul {
+            flex-direction: column;
+            width: 100%;
+            gap: 0;
+            > li {
+                width: 100%;
+                > a {
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: left;
+                    padding-left: 2em;
+                    border-bottom: none !important;
+                    background: none;
+                    transition: background 0.3s;
+                    &::after {
+                        display: none !important;
+                    }
+                    &:hover,
+                    &:focus {
+                        background: $accent;
+                        color: $secondary;
+                    }
+                }
+                > .submenu {
+                    position: static;
+                    min-width: 100%;
+                    width: 100%;
+                    box-shadow: none;
+                    transform: none !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                    display: none;
+                    border-radius: 0;
+                    background: #222 !important;
+                    a {
+                        width: 100%;
+                        box-sizing: border-box;
+                        text-align: left;
+                        padding-left: 2.5em;
+                        background: none;
+                        transition: background 0.3s;
+                        &:hover,
+                        &:focus {
+                            background: $accent;
+                            color: $secondary;
+                        }
+                    }
+                }
+                &:hover > .submenu,
+                &:focus-within > .submenu {
+                    display: block;
+                }
+            }
+        }
+    }
+} 

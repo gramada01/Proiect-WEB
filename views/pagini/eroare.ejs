@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title><%= titlu %> | Infinity</title>
+        <%- include('../fragmente/head') %>
+    </head>
+    <body>
+        <main>
+            <div class="container_pag_princ">
+                <section id="eroare_generica">
+                    <h1><%= titlu %></h1>
+                    <div class="eroare_content">
+                        <% if (typeof imagine !== 'undefined' && imagine) { %>
+                            <div class="eroare_imagine">
+                                <img src="<%= imagine %>" alt="<%= titlu %>" />
+                            </div>
+                        <% } %>
+                        <div class="eroare_text">
+                            <p><%= text %></p>
+                        </div>
+                    </div>
+                    <div class="butoane_navigare">
+                        <a href="/" class="buton_principal">Înapoi la pagina principală</a>
+                        <a href="javascript:history.back()" class="buton_secundar">Pagina anterioară</a>
+                    </div>
+                    <% if (typeof codEroare !== 'undefined' && codEroare) { %>
+                        <div class="informatii_tehnice">
+                            <p><small>Cod de eroare: <%= codEroare %></small></p>
+                        </div>
+                    <% } %>
+                </section>
+            </div>
+        </main>
+    </body>
+</html> 

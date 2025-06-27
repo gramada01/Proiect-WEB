@@ -1,0 +1,355 @@
+:root{
+    --primary: #95ff00 !important;
+    --secondary: #000000 !important;
+    --accent: #daff8f !important;
+    --background: #ffffff !important;
+    --text: black !important;
+    --background_pagina: #fff0db !important;
+    --link-visited: #8b4513 !important;
+
+    --margin_large: 3vw;
+    --margin_medium: 2vw;
+    --margin_small: 1vw;
+
+    --base-size: 5vw; 
+    --logo-width: calc(var(--base-size) * 2.12);
+    --logo-height: calc(var(--base-size) * 1); 
+    --logo-border-size: calc(var(--base-size) * 0.2);
+    --logo-border-color: var(--accent);
+    --logo-radius: calc(var(--base-size) * 0.5); 
+}
+
+html{
+    background: linear-gradient(var(--primary), var(--secondary), var(--accent));
+    background-attachment: fixed;
+    font-family: "Tektur", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text);
+    text-decoration: none;
+    justify-content: start;
+}
+
+body{
+    margin-left: var(--margin_large);
+    margin-right: var(--margin_large);
+    padding: 0;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-left: var(--margin_medium);
+        margin-right: var(--margin_medium);
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        margin-left: var(--margin_small);
+        margin-right: var(--margin_small);
+    }
+}
+
+header {
+    background-color: var(--secondary); 
+    color: var(--background); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(255, 0, 0);
+    margin-bottom: 20px;
+}
+
+#logo {
+    position: relative;
+    width: var(--logo-width);
+    height: var(--logo-height);
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+
+footer {
+    margin: 2vw 0 0 0;
+    padding: 2vw;
+    background-color: var(--secondary);
+    color: var(--background) !important;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#link-top{
+    position:fixed;
+    bottom:1em;
+    opacity:0.5;
+    right:1em;
+    width:3rem;
+    box-sizing: border-box;
+    height:3rem;
+    line-height:3rem;
+    text-align:center;
+    border: 0.3em solid grey;
+    border-style: dashed;
+    border-radius:50%;
+    background: linear-gradient(var(--primary), var(--secondary), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#link-top:hover{
+    opacity:1;
+    transition: 0.5s;
+    rotate: 90deg;
+}
+
+#vf_info{
+    position: fixed;
+    bottom: 6.5em;
+    right: 0.3em;
+    opacity: 0;
+    background: #ffffff;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 8px;
+    color: var(--text);
+    font-size: 10px;
+    transition: opacity 0.5s;
+}
+
+#link-top:hover + #vf_info{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#triunghi{
+    font-size: 30px;
+    transition: 0.5s;
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 8%;
+    padding-bottom: 7%;
+    border-radius: 50%;
+}
+
+#triunghi:hover{
+    rotate: -90deg;
+    transition: 0.5s;
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding: 3vw;
+        font-size: 2.5vw;
+    }
+    
+    #link-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    #vf_info {
+        font-size: 2.5vw;
+    }
+    
+    #triunghi {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        padding: 4vw;
+        font-size: 3.5vw;
+    }
+    
+    #vf_info {
+        font-size: 3.5vw;
+    }
+    
+    #triunghi {
+        font-size: 4vw;
+    }
+}
+
+.container_pag_princ{
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow: -10px 10px 8px var(--text);
+    padding: 20px;
+}
+
+#tabel_oferte {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.125em;
+    text-align: left;
+    border: 5px solid var(--accent);
+}
+
+#tabel_oferte th, #tabel_oferte td {
+    padding: 12px 15px;
+    border: 1px solid var(--text);
+}
+
+#tabel_oferte td:nth-child(even) {
+    color: var(--secondary);
+}
+
+#tabel_oferte thead {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+#tabel_oferte tbody tr {
+    background-color: var(--background);
+}
+
+#tabel_oferte tbody tr:hover {
+    background-color: var(--secondary);
+    border: 5px solid var(--text);
+    transition: 0.75s;
+}
+
+#tabel_oferte tbody tr:hover td {
+    color: var(--accent) !important;
+}
+
+#tabel_oferte caption {
+    caption-side: bottom;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-iframe{
+    display: flex;
+    padding-top: 20px;
+}
+
+img, video, iframe {
+    width: 100%; 
+    max-width: 60vw; 
+    min-width: 20vw; 
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 800px) {
+    img, video, iframe {
+        max-width: 80vw;
+        min-width: 30vw;
+    }
+    
+}
+
+#video_nike{
+    border: 10px inset var(--primary);
+
+}
+
+.taburi-iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.buton_nike{
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--background);
+    margin-top: -0.8vw;
+    width: min(130px, 25vw);
+    padding: min(8px, 1.5vw);
+    text-align: center;
+    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+    border: min(3px, 0.8vw) solid var(--primary);
+    border-top-right-radius: 30% 70%;
+    white-space: normal;
+    box-shadow: inset 0 0 8px var(--secondary);
+    transition: 0.5s;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.buton_nike:hover{
+    color: var(--background);
+    background-color: var(--primary);
+    transition: 0.5s;
+    border-left: min(3px, 0.8vw) solid var(--secondary);
+}
+
+@media (max-width: 800px) { 
+    .buton_nike {
+        width: min(110px, 25vw);
+        font-size: clamp(0.7rem, 2.2vw, 1.3rem);
+        padding: min(6px, 1.2vw);
+    }
+}
+
+@media (max-width: 400px) {
+    .buton_nike {
+        width: min(55px, 15vw);
+        font-size: clamp(0.6rem, 2vw, 1.1rem);
+        padding: min(5px, 1vw);
+    }
+}
+
+/* Stiluri pentru linkuri */
+a {
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+/* Linkuri din footer - culoare albă */
+footer a {
+    color: var(--background) !important;
+}
+
+/* Linkuri vizitate */
+main a:visited {
+    color: var(--link-visited);
+}
+
+/* Linkuri externe - simbol ⮳ */
+main a[href^="http"]::before {
+    content: "⮳";
+    font-size: 1.5em; /* 50% mai mare față de font-size-ul linkului */
+    margin-right: 0.3em;
+    transition: color 0.3s ease;
+}
+
+/* Hover pentru linkuri externe - schimbarea culorii simbolului */
+main a[href^="http"]:hover::before {
+    color: var(--primary);
+}
+
+/* Linkuri din conținutul paginii (main) - pata de culoare la hover */
+main a {
+    position: relative;
+    background: radial-gradient(circle, var(--primary) 0%, var(--primary) 40%, transparent 80%, transparent 100%);
+    background-position: center;
+    background-size: 0;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+}
+
+main a:hover {
+    background-size: 100%;
+}
+
+/* Border la click pe linkuri din pagină */
+main a:active {
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+

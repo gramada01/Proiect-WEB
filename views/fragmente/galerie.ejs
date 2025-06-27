@@ -1,0 +1,60 @@
+<section class="galerie-container">
+  <div class="galerie-grid">
+    <% if (imagini && imagini.length > 0) { %>
+      <% 
+        // Limitează imaginile la 10
+        const imaginiLimit = imagini.slice(0, 10);
+        let indexImagine = 0;
+        
+        // Array cu pozițiile din grid (img1-img10, gol1-gol2 pentru pozițiile goale)
+        const pozitii = ['img1', 'img2', 'img3', 'img4', 'img5', 'gol1', 'gol2', 'img6', 'img7', 'img8', 'img9', 'img10'];
+        
+        pozitii.forEach(function(pozitie) {
+          if (pozitie.startsWith('gol')) { %>
+            <div class="galerie-slot-gol"></div>
+          <% } else if (indexImagine < imaginiLimit.length) { 
+            const imagine = imaginiLimit[indexImagine]; %>
+            <figure class="galerie-item" style="grid-area: <%= pozitie %>;">
+              <picture class="galerie-imagine">
+                <!-- Sursă pentru ecran mare -->
+                <source 
+                  media="(min-width: 1200px)" 
+                  srcset="<%= cale_galerie %>/<%= imagine.cale_imagine %>">
+                <!-- Sursă pentru ecran mediu -->
+                <source 
+                  media="(min-width: 768px)" 
+                  srcset="<%= cale_galerie %>/medium/<%= imagine.cale_imagine %>">
+                <!-- Sursă pentru ecran mic -->
+                <source 
+                  media="(max-width: 767px)" 
+                  srcset="<%= cale_galerie %>/small/<%= imagine.cale_imagine %>">
+                <!-- Imagine fallback -->
+                <img src="<%= cale_galerie %>/<%= imagine.cale_imagine %>" 
+                     alt="<%= imagine.alt || imagine.cale_imagine %>" 
+                     title="<%= imagine.descriere %>">
+              </picture>
+              <figcaption class="galerie-info">
+                <h3 class="galerie-titlu"><%= imagine.titlu %></h3>
+                <p class="galerie-descriere"><%= imagine.descriere %></p>
+                <div class="galerie-timp">
+                  <span class="timp-label">Interval orar:</span>
+                  <span class="timp-valoare"><%= imagine.timp %></span>
+                </div>
+                <% if (imagine.licenta === 'CC-BY' && imagine.autor) { %>
+                  <div class="galerie-atribuire">
+                    <small>Foto: <%= imagine.autor %><% if (imagine.sursa) { %> / <%= imagine.sursa %><% } %></small>
+                  </div>
+                <% } %>
+              </figcaption>
+            </figure>
+          <% 
+            indexImagine++;
+          }
+        }); %>
+    <% } else { %>
+      <div class="galerie-gol">
+        <p>Nu sunt imagini disponibile în acest moment.</p>
+      </div>
+    <% } %>
+  </div>
+</section> 

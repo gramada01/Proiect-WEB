@@ -1,0 +1,385 @@
+{
+  "cale_galerie": "/resurse/imagini/galerie",
+  "imagini": [
+    {
+      "cale_imagine": "imagine1.jpg",
+      "titlu": "Colecție de primăvară",
+      "descriere": "Trecerea la garderoba de primăvară cu stiluri moderne și confortabile",
+      "timp": "08:00-12:00",
+      "alt": "Colecție de îmbrăcăminte de primăvară cu stiluri moderne",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine2.jpg",
+      "titlu": "Elemente de călătorie",
+      "descriere": "Accesorii și îmbrăcăminte perfecte pentru orice aventură",
+      "timp": "06:00-10:00",
+      "alt": "Accesorii și îmbrăcăminte pentru călătorie",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine3.jpg",
+      "titlu": "Stil casual feminin",
+      "descriere": "Look-uri relaxate și elegante pentru orice ocazie",
+      "timp": "10:00-14:00",
+      "alt": "Stil casual feminin elegant",
+      "licenta": "CC-BY",
+      "autor": "Sarah Johnson",
+      "sursa": "Unsplash"
+    },
+    {
+      "cale_imagine": "imagine4.jpg",
+      "titlu": "Cămăși elegante pentru bărbați",
+      "descriere": "Cămăși de calitate superioară pentru stilul modern masculin",
+      "timp": "12:00-16:00",
+      "alt": "Cămăși elegante pentru bărbați",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine5.jpg",
+      "titlu": "Pulovere de iarnă",
+      "descriere": "Pulovere calde și confortabile cu modele atractive",
+      "timp": "18:00-22:00",
+      "alt": "Pulovere de iarnă calde și confortabile",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine6.jpg",
+      "titlu": "Seturi de îmbrăcăminte",
+      "descriere": "Combinații perfecte pentru un look coordonat",
+      "timp": "20:00-02:00",
+      "alt": "Seturi de îmbrăcăminte coordonate",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine7.jpg",
+      "titlu": "Colecție variată",
+      "descriere": "Diversitate în stiluri și culori pentru toate gusturile",
+      "timp": "09:00-15:00",
+      "alt": "Colecție variată de îmbrăcăminte",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine8.jpg",
+      "titlu": "Accesorii și îmbrăcăminte",
+      "descriere": "Completează-ți look-ul cu accesorii elegante",
+      "timp": "22:00-06:00",
+      "alt": "Accesorii și îmbrăcăminte elegante",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine9.jpg",
+      "titlu": "Haine colorate pe umeraș",
+      "descriere": "Organizare elegantă a garderobei cu culori vibrante",
+      "timp": "07:00-11:00",
+      "alt": "Haine colorate organizate pe umeraș",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine10.jpg",
+      "titlu": "Stive de îmbrăcăminte",
+      "descriere": "Organizare practică pentru garderoba ta",
+      "timp": "14:00-18:00",
+      "alt": "Stive de îmbrăcăminte organizate",
+      "licenta": "CC0",
+      "autor": null,
+      "sursa": null
+    },
+    {
+      "cale_imagine": "imagine11.jpg",
+      "titlu": "Categorii de produse",
+      "descriere": "Navigare ușoară prin diferitele categorii de îmbrăcăminte",
+      "timp": "08:00-14:00",
+      "alt": "Categorii de produse îmbrăcăminte"
+    },
+    {
+      "cale_imagine": "imagine12.jpg",
+      "titlu": "Îmbrăcăminte de iarnă",
+      "descriere": "Stiluri calde și confortabile pentru sezonul rece",
+      "timp": "16:00-20:00",
+      "alt": "Îmbrăcăminte de iarnă caldă"
+    },
+    {
+      "cale_imagine": "imagine13.jpg",
+      "titlu": "Look casual de iarnă",
+      "descriere": "Combinații perfecte pentru stilul relaxat de iarnă",
+      "timp": "10:00-16:00",
+      "alt": "Look casual de iarnă relaxat"
+    },
+    {
+      "cale_imagine": "imagine14.jpg",
+      "titlu": "Pantaloni la modă",
+      "descriere": "Pantaloni moderni pentru stilul contemporani",
+      "timp": "12:00-18:00",
+      "alt": "Pantaloni la modă moderni"
+    },
+    {
+      "cale_imagine": "imagine15.jpg",
+      "titlu": "Lifestyle masculin",
+      "descriere": "Stiluri pentru bărbatul modern și activ",
+      "timp": "09:00-15:00",
+      "alt": "Lifestyle masculin modern"
+    },
+    {
+      "cale_imagine": "imagine16.jpg",
+      "titlu": "Look casual feminin",
+      "descriere": "Stiluri relaxate pentru femeia modernă",
+      "timp": "11:00-17:00",
+      "alt": "Look casual feminin modern"
+    },
+    {
+      "cale_imagine": "imagine17.jpg",
+      "titlu": "Tricouri de bază",
+      "descriere": "Tricouri clasic în stilul minimalist",
+      "timp": "07:00-13:00",
+      "alt": "Tricouri de bază minimalist"
+    },
+    {
+      "cale_imagine": "imagine18.jpg",
+      "titlu": "Pile de haine colorate",
+      "descriere": "Organizare creativă a îmbrăcămintei",
+      "timp": "13:00-19:00",
+      "alt": "Pile de haine colorate organizate"
+    },
+    {
+      "cale_imagine": "imagine19.jpg",
+      "titlu": "Haine pentru spălat",
+      "descriere": "Pregătirea pentru spălare și îngrijire",
+      "timp": "15:00-21:00",
+      "alt": "Haine pregătite pentru spălare"
+    },
+    {
+      "cale_imagine": "imagine20.jpg",
+      "titlu": "Render 3D îmbrăcăminte",
+      "descriere": "Vizualizări moderne ale produselor",
+      "timp": "06:00-12:00",
+      "alt": "Render 3D îmbrăcăminte modern"
+    },
+    {
+      "cale_imagine": "imagine21.jpg",
+      "titlu": "Îmbrăcăminte casual de iarnă",
+      "descriere": "Stiluri confortabile pentru sezonul rece",
+      "timp": "08:00-16:00",
+      "alt": "Îmbrăcăminte casual de iarnă confortabilă"
+    },
+    {
+      "cale_imagine": "imagine22.jpg",
+      "titlu": "Costume oversized",
+      "descriere": "Stiluri moderne cu costum oversized",
+      "timp": "10:00-18:00",
+      "alt": "Costume oversized moderne"
+    },
+    {
+      "cale_imagine": "imagine23.jpg",
+      "titlu": "Bluze de mătase",
+      "descriere": "Eleganță și confort în bluzele de mătase",
+      "timp": "12:00-20:00",
+      "alt": "Bluze de mătase elegante"
+    },
+    {
+      "cale_imagine": "imagine24.jpg",
+      "titlu": "Stive de îmbrăcăminte",
+      "descriere": "Organizare eficientă a garderobei",
+      "timp": "14:00-22:00",
+      "alt": "Stive de îmbrăcăminte organizate"
+    },
+    {
+      "cale_imagine": "imagine25.jpg",
+      "titlu": "Tricouri colorate",
+      "descriere": "Diversitate în culori și stiluri",
+      "timp": "16:00-00:00",
+      "alt": "Tricouri colorate diverse"
+    },
+    {
+      "cale_imagine": "imagine26.jpg",
+      "titlu": "Stive de tricouri",
+      "descriere": "Organizare practică pentru tricouri",
+      "timp": "18:00-02:00",
+      "alt": "Stive de tricouri organizate"
+    },
+    {
+      "cale_imagine": "imagine27.jpg",
+      "titlu": "Tricouri polo",
+      "descriere": "Stiluri sportive și elegante",
+      "timp": "20:00-04:00",
+      "alt": "Tricouri polo sportive"
+    },
+    {
+      "cale_imagine": "imagine28.jpg",
+      "titlu": "Pulovere variate",
+      "descriere": "Colecție diversă de pulovere",
+      "timp": "22:00-06:00",
+      "alt": "Pulovere variate diverse"
+    },
+    {
+      "cale_imagine": "imagine29.jpg",
+      "titlu": "Pulovere organizate",
+      "descriere": "Organizare elegantă a puloverelor",
+      "timp": "00:00-08:00",
+      "alt": "Pulovere organizate elegant"
+    },
+    {
+      "cale_imagine": "imagine30.jpg",
+      "titlu": "Render jachete",
+      "descriere": "Vizualizări moderne ale jachetelor",
+      "timp": "02:00-10:00",
+      "alt": "Render jachete moderne"
+    },
+    {
+      "cale_imagine": "imagine31.jpg",
+      "titlu": "Tricouri cu dungi",
+      "descriere": "Stiluri clasice cu dungi",
+      "timp": "04:00-12:00",
+      "alt": "Tricouri cu dungi clasice"
+    },
+    {
+      "cale_imagine": "imagine32.jpg",
+      "titlu": "Colecție de îmbrăcăminte",
+      "descriere": "Varietate în stiluri și accesorii",
+      "timp": "06:00-14:00",
+      "alt": "Colecție de îmbrăcăminte variată"
+    },
+    {
+      "cale_imagine": "imagine33.jpg",
+      "titlu": "Geacă elegantă",
+      "descriere": "Geacă de iarnă cu stil elegant",
+      "timp": "08:00-16:00",
+      "alt": "Geacă elegantă de iarnă"
+    },
+    {
+      "cale_imagine": "imagine34.jpg",
+      "titlu": "Colecție de primăvară",
+      "descriere": "Trecerea la garderoba de primăvară cu stiluri moderne",
+      "timp": "10:00-18:00",
+      "alt": "Colecție de primăvară modernă"
+    },
+    {
+      "cale_imagine": "imagine35.jpg",
+      "titlu": "Tricouri cu dungi",
+      "descriere": "Stiluri clasice cu dungi pentru orice ocazie",
+      "timp": "12:00-20:00",
+      "alt": "Tricouri cu dungi pentru orice ocazie"
+    },
+    {
+      "cale_imagine": "imagine36.jpg",
+      "titlu": "Colecție de îmbrăcăminte și încălțăminte",
+      "descriere": "Varietate completă în stiluri și accesorii",
+      "timp": "14:00-22:00",
+      "alt": "Colecție completă îmbrăcăminte și încălțăminte"
+    },
+    {
+      "cale_imagine": "imagine37.jpg",
+      "titlu": "Geacă gri elegantă",
+      "descriere": "Geacă de iarnă cu stil elegant și modern",
+      "timp": "16:00-00:00",
+      "alt": "Geacă gri elegantă de iarnă"
+    },
+    {
+      "cale_imagine": "imagine38.jpg",
+      "titlu": "Seturi de vară",
+      "descriere": "Stiluri ușoare și confortabile pentru sezonul cald",
+      "timp": "18:00-02:00",
+      "alt": "Seturi de vară ușoare"
+    },
+    {
+      "cale_imagine": "imagine39.jpg",
+      "titlu": "Pulovere confortabile",
+      "descriere": "Pulovere calde și confortabile pentru iarnă",
+      "timp": "20:00-04:00",
+      "alt": "Pulovere confortabile de iarnă"
+    },
+    {
+      "cale_imagine": "imagine40.jpg",
+      "titlu": "Pulovere de sezon",
+      "descriere": "Colecție de pulovere pentru toate anotimpurile",
+      "timp": "22:00-06:00",
+      "alt": "Pulovere de sezon pentru toate anotimpurile"
+    },
+    {
+      "cale_imagine": "imagine41.jpg",
+      "titlu": "Tricouri de bază",
+      "descriere": "Tricouri clasic pentru stilul minimalist",
+      "timp": "00:00-08:00",
+      "alt": "Tricouri de bază minimalist"
+    },
+    {
+      "cale_imagine": "imagine42.jpg",
+      "titlu": "Pulover turtleneck",
+      "descriere": "Pulover turtleneck cu blugi pentru look casual",
+      "timp": "02:00-10:00",
+      "alt": "Pulover turtleneck cu blugi"
+    },
+    {
+      "cale_imagine": "imagine43.jpg",
+      "titlu": "Jeans și jachetă",
+      "descriere": "Combinație clasică cu jeans și jachetă",
+      "timp": "04:00-12:00",
+      "alt": "Jeans și jachetă clasică"
+    },
+    {
+      "cale_imagine": "imagine44.jpg",
+      "titlu": "Cămașă hawaiană",
+      "descriere": "Cămașă hawaiană cu umeraș pentru organizare",
+      "timp": "06:00-14:00",
+      "alt": "Cămașă hawaiană cu umeraș"
+    },
+    {
+      "cale_imagine": "imagine45.jpg",
+      "titlu": "Cămașă hawaiană cu rack",
+      "descriere": "Cămașă hawaiană cu rack de organizare",
+      "timp": "08:00-16:00",
+      "alt": "Cămașă hawaiană cu rack de organizare"
+    },
+    {
+      "cale_imagine": "imagine46.jpg",
+      "titlu": "Cămașă hawaiană cu model",
+      "descriere": "Cămașă hawaiană cu modele atractive",
+      "timp": "10:00-18:00",
+      "alt": "Cămașă hawaiană cu modele atractive"
+    },
+    {
+      "cale_imagine": "imagine47.jpg",
+      "titlu": "Îmbrăcăminte de iarnă cu inimă",
+      "descriere": "Stiluri calde și confortabile cu accesorii",
+      "timp": "12:00-20:00",
+      "alt": "Îmbrăcăminte de iarnă cu accesorii"
+    },
+    {
+      "cale_imagine": "imagine48.jpg",
+      "titlu": "Colecție femeiască toamnă-iarnă",
+      "descriere": "Stiluri feminine pentru sezonul rece",
+      "timp": "14:00-22:00",
+      "alt": "Colecție femeiască toamnă-iarnă"
+    },
+    {
+      "cale_imagine": "imagine49.jpg",
+      "titlu": "Îmbrăcăminte feminină",
+      "descriere": "Colecție elegantă pentru femeia modernă",
+      "timp": "16:00-00:00",
+      "alt": "Îmbrăcăminte feminină elegantă"
+    },
+    {
+      "cale_imagine": "imagine50.jpg",
+      "titlu": "Pulover roz oversized",
+      "descriere": "Pulover roz oversized cu stil modern",
+      "timp": "18:00-02:00",
+      "alt": "Pulover roz oversized modern"
+    }
+  ]
+} 

@@ -1,0 +1,21 @@
+<%- include('../fragmente/head') %>
+
+<body>
+  <%- include('../fragmente/header') %>
+  
+  <main class="main-content galerie-page">
+    <div class="container">
+      <div class="page-header">
+        <h1 class="page-title">Galerie Foto</h1>
+        <p class="page-description">
+          Descoperă colecția noastră de imagini spectaculoase. 
+          Galeria se actualizează în funcție de ora curentă.
+        </p>
+      </div>
+      
+      <%- include('../fragmente/galerie', { imagini: imagini, cale_galerie: cale_galerie }) %>
+    </div>
+  </main>
+
+  <%- include('../fragmente/footer') %>
+</body> 

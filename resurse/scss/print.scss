@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Stiluri pentru Printare - se aplica doar la print
+   ========================================================================== */
+
+@media print {
+  @page :left {
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+  }
+  @page :right {
+    margin-right: 2.5cm;
+    margin-left: 0.5cm;
+  }
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+  }
+  body {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    &::after {
+      content: "Matei Chiscan";
+      position: fixed;
+      bottom: 2cm;
+      right: 2cm;
+      width: 100px;
+      height: 2cm;
+      border: 4px double black;
+      opacity: 0.65;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      pointer-events: none;
+    }
+  }
+  header {
+    .navigare_bara_sus {
+      display: none !important;
+    }
+  }
+  img,
+  video,
+  iframe,
+  .container-iframe,
+  .taburi-iframe,
+  figcaption,
+  #link-top {
+    display: none !important;
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: black !important;
+    text-align: center;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    page-break-after: always;
+  }
+  .grid, [class^="zona"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: block !important;
+  }
+  main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: block !important;
+    section {
+      display: block !important;
+      width: 100% !important;
+    }
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  footer {
+    page-break-before: always;
+    background: none !important;
+    border: none !important;
+  }
+  #banner-print {
+    position: absolute;
+    top: 1cm;
+    left: 10%;
+    width: 80%;
+    border: 2px dotted black;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    display: block !important;
+  }
+} 
